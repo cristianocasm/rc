@@ -29,7 +29,7 @@ Please feel free to use a different markup language if you do not plan to run
 
 
 * Get your own copy of this project by running (_prefer SSH method so that you don't have to authenticate on each interaction - pull, push and etc - with remote_):
-    $ git clone ...
+    $ git clone git@github.com:cristianocasm/rc.git
 
 * It is highly recomended you to use a __ruby version manager__. If using RVM, you can create and use a gemset by creating a `.rvmrc` file within source folder of the app:
     $ echo 'rvm use ruby-2.3.1@rc --create' > .rvmrc
