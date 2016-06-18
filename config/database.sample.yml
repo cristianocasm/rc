@@ -1,0 +1,14 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: rc
+  password: '123456'
+
+development:
+  <<: *default
+  database: rc_development
+
+test:
+  <<: *default
+  database: rc_test
