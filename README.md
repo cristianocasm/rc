@@ -52,3 +52,5 @@ Please feel free to use a different markup language if you do not plan to run
 # Some important information
 
 * Heroku: https://rcct.herokuapp.com/
+
+* This project uses UUID for primary key instead of simple sequential ids. It increases security [as we can see in this funny blog post](http://www.fidelis.work/como-eu-usei-o-cartao-de-credito-do-ceo-do-trampos-co-para-pagar-minha-assinatura-premium/).
