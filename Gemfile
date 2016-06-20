@@ -55,8 +55,21 @@ gem 'devise', '~> 4.1.1'
 # Bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
 
-# Heroku dependency
-gem 'rails_12factor', group: :production
+group :production do
+  # Heroku dependency
+  gem 'rails_12factor'
+end
+
+group :test do
+  # 'Specs' instead of 'tests'
+  gem 'rspec-rails', '~> 3.4.2'
+
+  # 'Factories' instead of 'fixtures'
+  gem 'factory_girl_rails', '~> 4.7.0'
+
+  # Collection of testing matchers
+  gem 'shoulda-matchers', '~> 3.1.1'
+end
 
 # Helps Heroku set proper ruby version
 ruby '2.3.1'

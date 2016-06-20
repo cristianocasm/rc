@@ -12,5 +12,8 @@
 !/log/.keep
 /tmp
 
-# Ignore database.yml and secrets.yml
+# Ignore database.yml
 /config/database.yml
+
+# Rspec
+/.rspec
