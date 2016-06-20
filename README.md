@@ -50,5 +50,3 @@ Please feel free to use a different markup language if you do not plan to run
 
 
 # Some important information
-
-* In ordet to speed up front-end development, some elements of [Blankon Template]() were used.
