@@ -54,3 +54,9 @@ gem 'devise', '~> 4.1.1'
 
 # Bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
+
+# Heroku dependency
+gem 'rails_12factor', group: :production
+
+# Helps Heroku set proper ruby version
+ruby '2.3.1'
