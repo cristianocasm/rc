@@ -17,3 +17,6 @@
 
 # Rspec
 /.rspec
+
+# Byebug
+/.byebug_history

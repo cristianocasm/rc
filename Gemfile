@@ -35,6 +35,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
+
+  # 'Specs' instead of 'tests'
+  gem 'rspec-rails', '~> 3.4.2'
 end
 
 group :development do
@@ -55,15 +58,15 @@ gem 'devise', '~> 4.1.1'
 # Bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
 
+# UUID for primary key instead of simple sequential ids
+gem 'ar-uuid', '~> 0.1.2'
+
 group :production do
   # Heroku dependency
   gem 'rails_12factor'
 end
 
 group :test do
-  # 'Specs' instead of 'tests'
-  gem 'rspec-rails', '~> 3.4.2'
-
   # 'Factories' instead of 'fixtures'
   gem 'factory_girl_rails', '~> 4.7.0'
 
