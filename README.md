@@ -47,3 +47,8 @@ Please feel free to use a different markup language if you do not plan to run
     $ rake db:create
     $ rake db:migrate
     $ rake db:seed
+
+
+# Some important information
+
+* In ordet to speed up front-end development, some elements of [Blankon Template]() were used.
