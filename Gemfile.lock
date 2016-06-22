@@ -41,6 +41,11 @@ GEM
     arel (6.0.3)
     autoprefixer-rails (6.3.6.2)
       execjs
+    backbone-on-rails (1.2.0.0)
+      eco
+      ejs
+      jquery-rails
+      railties
     bcrypt (3.1.11)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
@@ -65,6 +70,12 @@ GEM
       responders
       warden (~> 1.2.3)
     diff-lcs (1.2.5)
+    eco (1.0.0)
+      coffee-script
+      eco-source
+      execjs
+    eco-source (1.1.0.rc.1)
+    ejs (1.1.1)
     erubis (2.7.0)
     execjs (2.7.0)
     factory_girl (4.7.0)
@@ -195,6 +206,7 @@ PLATFORMS
 
 DEPENDENCIES
   ar-uuid (~> 0.1.2)
+  backbone-on-rails (~> 1.2.0)
   bootstrap-sass (~> 3.3.6)
   byebug
   coffee-rails (~> 4.1.0)

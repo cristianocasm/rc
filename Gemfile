@@ -58,6 +58,9 @@ gem 'devise', '~> 4.1.1'
 # Bootstrap
 gem 'bootstrap-sass', '~> 3.3.6'
 
+# Backbone
+gem 'backbone-on-rails', '~> 1.2.0'
+
 # UUID for primary key instead of simple sequential ids
 gem 'ar-uuid', '~> 0.1.2'
 
