@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe "Authentication" do
+describe "Authentications" do
   let!(:user) { FactoryGirl.create(:user) }
 
   it "signs in registered user" do
