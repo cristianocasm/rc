@@ -7,7 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <%= render 'layouts/messages' %>
+  
   <%= yield %>
 
   <%= javascript_include_tag controller_name if controller_has_js_asset? %>

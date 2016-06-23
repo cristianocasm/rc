@@ -79,6 +79,9 @@ group :test do
 
   # Collection of testing matchers
   gem 'shoulda-matchers', '~> 3.1.1'
+
+  # Acceptance test
+  gem 'capybara-webkit', '~> 1.11.1'
 end
 
 # Helps Heroku set proper ruby version

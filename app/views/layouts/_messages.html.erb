@@ -1,0 +1,12 @@
+<% flash.each do |key, value| %>
+  <% bootstrap_class = { alert: 'danger' } %>
+  
+  <div class="alert alert-<%= bootstrap_class[key.to_sym] %>">
+    <a href="#" data-dismiss="alert" class="close">×</a>
+    <ul>
+      <li>
+        <%= value %>
+      </li>
+    </ul>
+  </div>
+<% end %>
