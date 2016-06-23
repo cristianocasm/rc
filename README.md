@@ -1,59 +1,32 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
-
+# README
 
 * Get your own copy of this project by running (_prefer SSH method so that you don't have to authenticate on each interaction - pull, push and etc - with remote_):
-    $ git clone git@github.com:cristianocasm/rc.git
+
+  $ `git clone git@github.com:cristianocasm/rc.git`
 
 * It is highly recomended you to use a __ruby version manager__. If using RVM, you can create and use a gemset by creating a `.rvmrc` file within source folder of the app:
-    $ echo 'rvm use ruby-2.3.1@rc --create' > .rvmrc
+
+  $ `echo 'rvm use ruby-2.3.1@rc --create' > .rvmrc`
 
   * Check whether your gemset was properly set by running:
     
-    $ rvm list gemsets
+    $ `rvm list gemsets`
 
 * Install all dependencies
-    $ bundle install
+
+  $ `bundle install`
 
 * Rename the file `database.sample.yml` to `database.yml` (inside `config/` folder) and reset `username` and `password` properly so that the application can connect to your database locally.
 
 * Create, migrate and seed your DB
-    $ rake db:create
-    $ rake db:migrate
-    $ rake db:seed
 
+  $ `rake db:setup`
 
 # Some important information
 
 * Heroku: https://rcct.herokuapp.com/
 
-* Under _app/views/layouts/application.html.erb we have the instruction `<%= javascript_include_tag controller_name if controller_has_js_asset? %>`. That instruction sets a convention to be followed when creating js assets: 
+* Under `app/views/layouts/application.html.erb` we have the instruction `<%= javascript_include_tag controller_name if controller_has_js_asset? %>`. That instruction sets a convention to be followed when creating js assets: 
 
   * Create your file under `app/assets/javascripts` naming it as controller's name
 
@@ -61,6 +34,6 @@ Please feel free to use a different markup language if you do not plan to run
 
   * This project uses Backbone.js. Thus, you must use the file created (in previous step) to initialize your Backbone class.
 
-  * *Important*: once convention is followed, it is not necessary to include files in manifest (`app/assets/javascripts/application.js`).
+  * **Important**: once convention is followed, it is not necessary to include files in manifest (`app/assets/javascripts/application.js`).
 
 * This project uses UUID for primary key instead of simple sequential ids. It increases security [as we can see in this funny blog post](http://www.fidelis.work/como-eu-usei-o-cartao-de-credito-do-ceo-do-trampos-co-para-pagar-minha-assinatura-premium/).
