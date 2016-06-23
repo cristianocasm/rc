@@ -64,6 +64,9 @@ gem 'backbone-on-rails', '~> 1.2.0'
 # UUID for primary key instead of simple sequential ids
 gem 'ar-uuid', '~> 0.1.2'
 
+# Enumerations
+gem 'enumerate_it', '~> 1.3.0'
+
 group :production do
   # Heroku dependency
   gem 'rails_12factor'
