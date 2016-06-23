@@ -53,4 +53,14 @@ Please feel free to use a different markup language if you do not plan to run
 
 * Heroku: https://rcct.herokuapp.com/
 
+* Under _app/views/layouts/application.html.erb we have the instruction `<%= javascript_include_tag controller_name if controller_has_js_asset? %>`. That instruction sets a convention to be followed when creating js assets: 
+
+  * Create your file under `app/assets/javascripts` naming it as controller's name
+
+    * Example: `users_controller.rb` -> `users.js`
+
+  * This project uses Backbone.js. Thus, you must use the file created (in previous step) to initialize your Backbone class.
+
+  * *Important*: once convention is followed, it is not necessary to include files in manifest (`app/assets/javascripts/application.js`).
+
 * This project uses UUID for primary key instead of simple sequential ids. It increases security [as we can see in this funny blog post](http://www.fidelis.work/como-eu-usei-o-cartao-de-credito-do-ceo-do-trampos-co-para-pagar-minha-assinatura-premium/).
