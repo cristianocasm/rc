@@ -20,3 +20,6 @@
 
 # Byebug
 /.byebug_history
+
+# RVM
+/.rvmrc
