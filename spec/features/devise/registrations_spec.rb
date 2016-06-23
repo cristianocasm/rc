@@ -4,7 +4,9 @@ describe "Registrations" do
   let!(:user) { FactoryGirl.create(:user) }
 
   it "signs up a user" do
-    visit '/sign_up'
+    visit root_path
+
+    # click sign_up
 
     within("form#new_user") do
       fill_in 'Email', :with => 'abc123@email.com'
@@ -18,7 +20,9 @@ describe "Registrations" do
   end
 
   it "does not sign up a user with same one's email" do
-    visit '/sign_up'
+    visit root_path
+
+    # click sign_up
 
     within("form#new_user") do
       fill_in 'Email', :with => user.email

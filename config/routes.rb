@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  root to: 'boards#index'
+
+  resources :boards
+
   devise_for :users, skip: :registrations, path: ''
   
   # Avoiding user deletion and editing

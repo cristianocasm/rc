@@ -4,7 +4,9 @@ describe "Authentications" do
   let!(:user) { FactoryGirl.create(:user) }
 
   it "signs in registered user" do
-    visit '/sign_in'
+    visit root_path
+
+    # click sign_in
 
     within("form#new_user") do
       fill_in 'Email', :with => user.email
@@ -13,11 +15,13 @@ describe "Authentications" do
     
     click_button 'Entrar'
     
-    expect(page).to have_success_message 'Success'
+    expect(page).to have_success_message 'Login efetuado com sucesso.'
   end
 
   it "does not sign in user not registered" do
-    visit '/sign_in'
+    visit root_path
+
+    # click sign_in
 
     within("form#new_user") do
       fill_in 'Email', :with => user.email
